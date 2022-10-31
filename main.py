@@ -16,7 +16,8 @@ def progressbar(it, prefix="", size=60, out=sys.stdout): # Python3.3+
     print("\n", flush=True, file=out)
 
 
-cycle = int(input("Input your pomodoros cycles, leave it for (4): "))
+
+cycle = int(input("Input your pomodoros cycles, leave it for (4): ") or 4)
 
 if cycle is None:
     cycle = 4
